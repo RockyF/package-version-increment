@@ -1,0 +1,23 @@
+{
+	"name": "package-version-increment",
+	"version": "1.0.2",
+	"main": "dist/index.js",
+	"bin": {
+		"pvi": "dist/cli.js"
+	},
+	"license": "MIT",
+	"scripts": {
+		"dev": "tsc -w",
+		"build": "tsc",
+		"release": "pvi && npm publish",
+		"test": "node dist/index.js",
+		"test:cli": "node dist/cli.js"
+	},
+	"devDependencies": {
+		"@types/node": "^16.10.1",
+		"@types/semver": "^7.3.8"
+	},
+	"dependencies": {
+		"semver": "^7.3.5"
+	}
+}
